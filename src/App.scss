@@ -1,0 +1,49 @@
+#root {
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: relative;
+  width: 40px;
+  animation: loader infinite 3s linear;
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.action-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+  }
+}
+
+.category-name {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 0;
+}
